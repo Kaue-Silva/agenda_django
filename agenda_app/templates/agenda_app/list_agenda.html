@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Agenda List
+{% endblock %}
+
+{% block main %}
+    {% for agenda in object_list %}
+        {{ agenda.compromisso }}
+        {{ agenda.data_hora }}
+        {{ agenda.cliente }}
+        <br/>
+    {% endfor %}
+{% endblock %}
